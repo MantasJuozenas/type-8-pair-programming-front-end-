@@ -27,6 +27,13 @@ function oneCard(name, data, email, id) {
   viewBtnEl.textContent = 'VIEW LOG';
   divBtnEl.prepend(viewBtnEl);
   const deleteBtnEl = document.createElement('button');
+  deleteBtnEl.addEventListener('click', () => {
+    if (confirm(`Ar tikrai norite istrint ${name}`) === true) {
+      deletingPet(id);
+      getPets();
+    }
+    return;
+  });
   deleteBtnEl.textContent = 'DELETE';
   deleteBtnEl.classList = 'delete-btn';
   viewBtnEl.after(deleteBtnEl);
@@ -34,9 +41,18 @@ function oneCard(name, data, email, id) {
   return divCardEl;
 }
 function genCards(arr, dest) {
+  dest.innerHTML = '';
   arr.forEach((obj) => {
     dest.append(oneCard(obj.name, obj.dob, obj.client_email, obj.id));
   });
+}
+
+async function deletingPet(id) {
+  const resp = await fetch(`http://localhost:3306/v1/pets/${id}`, { method: 'DELETE' });
+  const data = await resp.json();
+  if (data.success === true) {
+    getPets();
+  }
 }
 
 getPets();
