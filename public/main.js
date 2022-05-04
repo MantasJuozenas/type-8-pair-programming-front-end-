@@ -1,13 +1,14 @@
+const sectionEl = document.querySelector('.grid');
+
 async function getPets() {
   const resp = await fetch('http://localhost:3306/v1/pets');
   const petsArr = await resp.json();
-  genCards(petsArr, document.body);
+  genCards(petsArr, sectionEl);
 }
-getPets();
 
 function oneCard(name, data, email, id) {
   const divCardEl = document.createElement('div');
-  divCardEl.className = 'cardTitle';
+  divCardEl.className = 'card';
   const h2El = document.createElement('h2');
   h2El.className = 'cardTitle';
   h2El.textContent = name;
@@ -38,20 +39,4 @@ function genCards(arr, dest) {
   });
 }
 
-/* <div class="card">
-
-<h2 class="cardTitle">Levis</h2>
-
-<p>2001-12-25</p>
-
-<p>petras@petras.lt</p>
-
-<div class="buttons">
-
-<button class="view-log-btn">VIEW LOG</button>
-
-<button class="delete-btn">DELETE</button>
-
-</div>
-
-</div> */
+getPets();
