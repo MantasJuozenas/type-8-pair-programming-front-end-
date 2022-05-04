@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet List</title>
+    <title>Health Log</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./main.js" defer></script>
@@ -26,11 +32,20 @@
       </div>
     </header>
     <main>
-      <section class="petList">
-        <h1>Pet List</h1>
-        <button>ADD PET</button>
+      <section class="log">
+        <div class="title-div">
+          <h1 class="logTitle">Pet</h1>
+          <div>
+            <button class="presc-btn">ADD PRESCRIPTION</button>
+            <button class="log-btn">ADD LOG</button>
+          </div>
+        </div>
+        <div class="display-div">
+          <p>Display:</p>
+          <button>LOGS <i class="fa fa-check" aria-hidden="true"></i></button>
+          <button>PRESCRIPTIONS <i class="fa fa-check" aria-hidden="true"></i></button>
+        </div>
       </section>
-      <section class="grid"></section>
     </main>
     <footer class="footer">
       <h2>Copyright © VetBee 2018. All rights reserved.</h2>
