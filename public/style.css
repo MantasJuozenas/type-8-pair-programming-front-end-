@@ -63,7 +63,6 @@ body {
 }
 
 .petList button {
-  width: 130px;
   padding: 8px 25px;
   background-color: rgb(255, 120, 0);
   border-radius: 5px;
@@ -87,6 +86,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .med-grid {
@@ -213,4 +216,12 @@ body {
   border-radius: 5px;
   border: rgb(255, 120, 0) 1px solid;
   color: rgb(255, 120, 0);
+}
+
+/* forms section */
+.pets-form {
+}
+
+.pets-form * {
+  display: block;
 }
