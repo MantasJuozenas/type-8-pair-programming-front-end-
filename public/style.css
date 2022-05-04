@@ -1,11 +1,11 @@
 body {
   margin: 0;
   font-family: monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-html {
-  min-height: 100vh;
-}
 /* HEADER SECTION */
 .head {
   border-bottom: 1px solid rgb(230, 230, 230);
@@ -122,7 +122,6 @@ html {
   text-align: center;
   color: rgb(162, 167, 170);
   margin-top: auto;
-  width: 100%;
 }
 
 .footer h2 {
