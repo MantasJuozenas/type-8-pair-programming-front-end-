@@ -42,7 +42,21 @@ body {
   justify-content: space-between;
 }
 
+.medList {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .petList h1 {
+  font-weight: 400;
+  color: rgb(109, 120, 129);
+  font-size: 30px;
+}
+
+.medList h1 {
   font-weight: 400;
   color: rgb(109, 120, 129);
   font-size: 30px;
@@ -50,6 +64,14 @@ body {
 
 .petList button {
   width: 130px;
+  padding: 8px 25px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.medList button {
   padding: 8px 25px;
   background-color: rgb(255, 120, 0);
   border-radius: 5px;
@@ -67,11 +89,24 @@ body {
   gap: 20px;
 }
 
+.med-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
 .card {
   border: 1px solid rgb(230, 230, 230);
   text-align: center;
   padding: 0 10px 10px 10px;
   min-height: 200px;
+}
+
+.card h2 {
+  font-size: 35px;
+  color: rgb(103, 108, 111);
 }
 
 .card p {
