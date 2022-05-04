@@ -14,7 +14,7 @@ function oneCard(name, data, email, id) {
   h2El.textContent = name;
   divCardEl.prepend(h2El);
   const pDataEl = document.createElement('p');
-  pDataEl.textContent = data;
+  pDataEl.textContent = data.slice(0, 10);
   h2El.after(pDataEl);
   const pEmailEl = document.createElement('p');
   pEmailEl.textContent = email;
@@ -23,6 +23,9 @@ function oneCard(name, data, email, id) {
   divBtnEl.className = 'buttons';
   pEmailEl.after(divBtnEl);
   const viewBtnEl = document.createElement('button');
+  viewBtnEl.addEventListener('click', () => {
+    window.location.href = 'log.html';
+  });
   viewBtnEl.className = 'view-log-btn';
   viewBtnEl.textContent = 'VIEW LOG';
   divBtnEl.prepend(viewBtnEl);
