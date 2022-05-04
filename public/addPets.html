@@ -15,10 +15,14 @@
     <link rel="stylesheet" href="style.css" />
     <script src="./addPets.js" defer></script>
   </head>
+
   <body>
     <header class="head">
       <div class="header">
-        <img src="http://www.petras.slekys.com/images/projects/vetbee.png" alt="vetbee logo" />
+        <img
+          src="http://www.petras.slekys.com/images/projects/vetbee.png"
+          alt="vetbee logo"
+        />
         <nav class="nav">
           <a href="index.html">Pets</a>
           <a href="medication.html">Medications</a>
@@ -32,14 +36,27 @@
       </section>
       <section class="container">
         <form class="pets-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Name">
-          <label for="data">Date of birth</label>
-          <input type="date" id="data" name="data" placeholder="Date of birth">
-          <label for="email">Client email</label>
-          <input type="email" id="email" name="email" placeholder="@email.com">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <label for="data">Date of birth</label>
+            <input
+              placeholder="Date of birth"
+              class="textbox-n"
+              type="text"
+              onfocus="(this.type='date')"
+              id="date"
+              onblur="(this.type='text')"
+            />
+            <label for="email">Client email</label>
+            <input type="email" id="email" name="email" placeholder="@email.com" />
+          </div>
           <button type="submit">Add pet</button>
         </form>
       </section>
+    </main>
+    <footer class="footer">
+      <h2>Copyright © VetBee 2018. All rights reserved.</h2>
+    </footer>
   </body>
 </html>
