@@ -24,10 +24,11 @@ function oneCard(name, data, email, id) {
   pEmailEl.after(divBtnEl);
   const viewBtnEl = document.createElement('button');
   viewBtnEl.addEventListener('click', () => {
-    window.location.href = 'log.html';
+    window.location.href = `log.html?=${id}`;
   });
   viewBtnEl.className = 'view-log-btn';
   viewBtnEl.textContent = 'VIEW LOG';
+
   divBtnEl.prepend(viewBtnEl);
   const deleteBtnEl = document.createElement('button');
   deleteBtnEl.addEventListener('click', () => {
