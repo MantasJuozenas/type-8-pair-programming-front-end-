@@ -9,6 +9,9 @@ const logbtnEl = document.querySelector('.log-btn');
 prescBtnEl.addEventListener('click', () => {
   window.location.href = `addPrescripcion.html?=${id}`;
 });
+logbtnEl.addEventListener('click', () => {
+  window.location.href = `addLog.html?=${id}`;
+});
 
 displayLogsBtn.addEventListener('click', () => {
   displayLogsBtn.classList.toggle('active');
