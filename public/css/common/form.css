@@ -1,0 +1,38 @@
+.addForm {
+  background-color: rgb(227, 227, 227);
+  padding: 30px;
+  min-width: 600px;
+  border-radius: 10px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addForm label {
+  font-weight: 400;
+  color: rgb(99, 109, 112);
+  font-size: 20px;
+}
+.addForm input {
+  padding: 10px;
+}
+textarea {
+  padding: 10px;
+}
+
+.addForm * {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.addForm button {
+  margin-top: auto;
+  width: 40%;
+  padding: 10px 25px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}

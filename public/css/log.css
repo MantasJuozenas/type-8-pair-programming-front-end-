@@ -1,0 +1,95 @@
+@import './common/reset.css';
+@import './common/common.css';
+@import './common/header.css';
+@import './common/footer.css';
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid rgb(230, 230, 230);
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(103, 108, 111);
+}
+
+.card p:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.cardTitle {
+  color: rgb(99, 109, 112);
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.logHero {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-div h1 {
+  font-weight: 400;
+  color: rgb(99, 109, 112);
+}
+
+.display-div {
+  display: flex;
+  align-items: center;
+}
+
+.display-div p {
+  font-size: 16px;
+}
+
+.presc-btn {
+  padding: 10px 25px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.displayBtn {
+  margin: 0 3px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: rgb(255, 120, 0) 1px solid;
+  color: rgb(255, 120, 0);
+}
+.active {
+  margin: 0 3px;
+  padding: 5px 10px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.log-btn {
+  padding: 10px 25px;
+  background-color: white;
+  border-radius: 5px;
+  border: rgb(255, 120, 0) 1px solid;
+  color: rgb(255, 120, 0);
+}
