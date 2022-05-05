@@ -263,6 +263,9 @@ a {
 .pets-form input {
   padding: 10px;
 }
+textarea {
+  padding: 10px;
+}
 
 .pets-form * {
   display: block;
@@ -271,7 +274,7 @@ a {
 }
 .pets-form button {
   margin-top: auto;
-  width: 140px;
+  width: 40%;
   padding: 10px 25px;
   background-color: rgb(255, 120, 0);
   border-radius: 5px;

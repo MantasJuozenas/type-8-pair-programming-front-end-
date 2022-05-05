@@ -20,7 +20,6 @@ function generateCard(name, desc, dest) {
 function generateAll(arr, dest) {
   dest.innerHTML = '';
   arr.forEach((med) => {
-    console.log(med.name);
     generateCard(med.name, med.description, dest);
   });
 }

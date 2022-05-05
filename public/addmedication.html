@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pet List</title>
+    <title>Add Medications</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -13,8 +13,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="./medication.js" defer></script>
+    <script src="./addmedication.js" defer></script>
   </head>
+
   <body>
     <header class="head">
       <div class="header">
@@ -26,11 +27,27 @@
       </div>
     </header>
     <main>
-      <section class="medList">
-        <h1>Medication List</h1>
-        <button><a href="./addmedication.html">ADD MEDICATION</a></button>
+      <section class="petList">
+        <h1>Add Medications</h1>
+        <button><a href="./medication.html">Back to Medications</a></button>
       </section>
-      <section class="med-grid"></section>
+      <section class="container">
+        <form class="pets-form">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" />
+            <label for="description">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="10"
+              placeholder="Description"
+            ></textarea>
+          </div>
+          <button id="btnSubmit" type="submit">Create medication</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <h2>Copyright © VetBee 2018. All rights reserved.</h2>
