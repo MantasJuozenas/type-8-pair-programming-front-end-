@@ -1,5 +1,5 @@
-@import './reset.css';
-@import './common.css';
-@import './header.css';
-@import './form.css';
-@import './footer.css';
+@import './common/reset.css';
+@import './common/common.css';
+@import './common/header.css';
+@import './common/form.css';
+@import './common/footer.css';

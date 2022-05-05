@@ -1,7 +1,7 @@
-@import './reset.css';
-@import './common.css';
-@import './header.css';
-@import './footer.css';
+@import './common/reset.css';
+@import './common/common.css';
+@import './common/header.css';
+@import './common/footer.css';
 
 .grid {
   max-width: 1200px;

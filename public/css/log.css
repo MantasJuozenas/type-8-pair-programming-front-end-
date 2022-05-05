@@ -1,4 +1,42 @@
-.log {
+@import './common/reset.css';
+@import './common/common.css';
+@import './common/header.css';
+@import './common/footer.css';
+
+.grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid rgb(230, 230, 230);
+  text-align: center;
+  padding: 0 10px 10px 10px;
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(103, 108, 111);
+}
+
+.card p:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+
+.cardTitle {
+  color: rgb(99, 109, 112);
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.logHero {
   max-width: 1200px;
   margin: 0 auto;
 }
