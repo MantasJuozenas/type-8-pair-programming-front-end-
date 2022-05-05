@@ -9,6 +9,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* HEADER SECTION */
 .head {
   border-bottom: 1px solid rgb(230, 230, 230);
@@ -200,21 +205,29 @@ body {
   align-items: center;
 }
 
-.display-div button {
-  padding: 6px 10px;
-  margin: 0 2px;
-  background-color: rgb(255, 120, 0);
-  border-radius: 5px;
-  border: none;
-  color: white;
-}
-
 .display-div p {
   font-size: 16px;
 }
 
 .presc-btn {
   padding: 10px 25px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.displayBtn {
+  margin: 0 3px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: rgb(255, 120, 0) 1px solid;
+  color: rgb(255, 120, 0);
+}
+.active {
+  margin: 0 3px;
+  padding: 5px 10px;
   background-color: rgb(255, 120, 0);
   border-radius: 5px;
   border: none;
