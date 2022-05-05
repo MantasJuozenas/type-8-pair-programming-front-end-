@@ -23,7 +23,6 @@ async function postingPets(obj) {
     body: JSON.stringify(obj),
   };
   const res = await fetch('http://localhost:3306/v1/pets', options);
-  console.log('res ===', res);
   if (res.ok === true) {
     window.location.href = 'addPets.html';
   } else {
