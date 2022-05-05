@@ -36,3 +36,7 @@ textarea {
   border: none;
   color: white;
 }
+.addForm select {
+  padding: 10px;
+  color: rgb(99, 109, 112);
+}
