@@ -5,6 +5,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* HEADER SECTION */
 .head {
@@ -63,7 +66,6 @@ body {
 }
 
 .petList button {
-  width: 130px;
   padding: 8px 25px;
   background-color: rgb(255, 120, 0);
   border-radius: 5px;
@@ -87,6 +89,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
 }
 
 .med-grid {
@@ -217,4 +227,41 @@ body {
   border-radius: 5px;
   border: rgb(255, 120, 0) 1px solid;
   color: rgb(255, 120, 0);
+}
+
+/* forms section */
+.pets-form {
+  background-color: rgb(227, 227, 227);
+  padding: 30px;
+  min-width: 600px;
+  border-radius: 10px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pets-form label {
+  font-weight: 400;
+  color: rgb(99, 109, 112);
+  font-size: 20px;
+}
+.pets-form input {
+  padding: 10px;
+}
+
+.pets-form * {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.pets-form button {
+  margin-top: auto;
+  width: 140px;
+  padding: 10px 25px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
 }
