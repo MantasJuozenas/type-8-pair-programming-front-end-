@@ -10,6 +10,7 @@ function generateCard(name, desc, dest) {
   const divEl = document.createElement('div');
   divEl.classList.add('card');
   const h2El = document.createElement('h2');
+  h2El.classList.add('cardTitle');
   h2El.textContent = name;
   const pEl = document.createElement('p');
   pEl.textContent = desc;

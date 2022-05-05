@@ -1,12 +1,9 @@
-.grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
+@import './reset.css';
+@import './common.css';
+@import './header.css';
+@import './footer.css';
 
-.med-grid {
+.grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -19,15 +16,8 @@
   text-align: center;
   padding: 0 10px 10px 10px;
   min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.card h2 {
-  font-size: 30px;
-  color: rgb(103, 108, 111);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .card p {
@@ -38,14 +28,6 @@
 
 .card p:nth-of-type(2) {
   margin-bottom: 30px;
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-  gap: 5px;
 }
 
 .cardTitle {
@@ -61,6 +43,7 @@
   border-radius: 5px;
   border: none;
   color: white;
+  margin-right: 5px;
 }
 
 .delete-btn {
