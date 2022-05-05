@@ -1,0 +1,57 @@
+.log {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-div h1 {
+  font-weight: 400;
+  color: rgb(99, 109, 112);
+}
+
+.display-div {
+  display: flex;
+  align-items: center;
+}
+
+.display-div p {
+  font-size: 16px;
+}
+
+.presc-btn {
+  padding: 10px 25px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.displayBtn {
+  margin: 0 3px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+  border: rgb(255, 120, 0) 1px solid;
+  color: rgb(255, 120, 0);
+}
+.active {
+  margin: 0 3px;
+  padding: 5px 10px;
+  background-color: rgb(255, 120, 0);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.log-btn {
+  padding: 10px 25px;
+  background-color: white;
+  border-radius: 5px;
+  border: rgb(255, 120, 0) 1px solid;
+  color: rgb(255, 120, 0);
+}
