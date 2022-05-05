@@ -18,13 +18,13 @@ async function postingPets(obj) {
   const options = {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json;charset=utf-8',
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(obj),
   };
   const res = await fetch('http://localhost:3306/v1/pets', options);
   if (res.ok === true) {
-    window.location.href = 'addPets.html';
+    window.location.href = 'index.html';
   } else {
     console.error('somethin went wrong');
   }
