@@ -3,9 +3,9 @@ const btnSubmitEl = document.getElementById('btnSubmit');
 btnSubmitEl.addEventListener('click', (e) => {
   e.preventDefault();
   const newPet = {
-    name: document.forms[0].elements.name.value,
+    name: document.forms[0].elements.name.value.trim(),
     dob: document.forms[0].elements.data.value,
-    client_email: document.forms[0].elements.email.value,
+    client_email: document.forms[0].elements.email.value.trim(),
   };
   document.forms[0].elements.name.value = '';
   document.forms[0].elements.data.value = '';
