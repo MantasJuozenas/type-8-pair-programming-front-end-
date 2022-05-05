@@ -13,6 +13,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/add.css" />
+    <script src="./js/addPrescription.js" defer></script>
   </head>
 
   <body>
@@ -34,12 +35,10 @@
         <form class="addForm">
           <div>
             <label for="petId">Pet ID</label>
-            <input type="text" id="petId" name="petId" placeholder="petId" />
+            <input type="text" id="petId" name="petId" disabled />
             <label for="medId">Medication ID</label>
             <select name="medId" id="medId">
               <option value="">Pasirinkite vaista</option>
-              <option value="1">1</option>
-              <option value="2">2/option></option>
             </select>
 
             <label for="comment">Comment</label>

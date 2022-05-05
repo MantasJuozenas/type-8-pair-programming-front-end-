@@ -1,8 +1,14 @@
 const sectionGridEl = document.querySelector('.grid');
 const h1El = document.querySelector('h1');
-let id = location.search;
+let id = location.search.slice(2);
 const displayLogsBtn = document.getElementById('displayLogs');
 const displayPrescBtn = document.getElementById('displayPresc');
+const prescBtnEl = document.querySelector('.presc-btn');
+const logbtnEl = document.querySelector('.log-btn');
+
+prescBtnEl.addEventListener('click', () => {
+  window.location.href = `addPrescripcion.html?=${id}`;
+});
 
 displayLogsBtn.addEventListener('click', () => {
   displayLogsBtn.classList.toggle('active');
@@ -85,5 +91,5 @@ function check() {
   }
 }
 
-getingPrescription(id.slice(2));
-getingLogs(id.slice(2));
+getingPrescription(id);
+getingLogs(id);
