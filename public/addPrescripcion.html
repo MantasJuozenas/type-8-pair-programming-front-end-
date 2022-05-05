@@ -13,7 +13,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/add.css" />
-    <script src="./js/addPets.js" defer></script>
   </head>
 
   <body>
@@ -28,28 +27,31 @@
     </header>
     <main>
       <section class="hero">
-        <h1>Add Pets</h1>
-        <button><a href="./index.html">Back to pets</a></button>
+        <h1>Add prescripctions</h1>
+        <button><a href="./index.html">Back health records</a></button>
       </section>
       <section class="container">
         <form class="addForm">
           <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" />
-            <label for="data">Date of birth</label>
-            <input
-              name="data"
-              placeholder="Date of birth"
-              class="textbox-n"
-              type="text"
-              onfocus="(this.type='date')"
-              id="date"
-              onblur="(this.type='text')"
-            />
-            <label for="email">Client email</label>
-            <input type="email" id="email" name="email" placeholder="@email.com" />
+            <label for="petId">Pet ID</label>
+            <input type="text" id="petId" name="petId" placeholder="petId" />
+            <label for="medId">Medication ID</label>
+            <select name="medId" id="medId">
+              <option value="">Pasirinkite vaista</option>
+              <option value="1">1</option>
+              <option value="2">2/option></option>
+            </select>
+
+            <label for="comment">Comment</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Comment"
+            ></textarea>
           </div>
-          <button id="btnSubmit" type="submit">Add pet</button>
+          <button id="btnSubmit" type="submit">Add prescription</button>
         </form>
       </section>
     </main>
